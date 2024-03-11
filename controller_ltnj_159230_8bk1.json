@@ -1,0 +1,4 @@
+false - 10,56,36,92,2,3,94,88,20,22,65,44,80,2,55,32,68,76,11,82,89,85,41,85,92,59,19
+const curry = (fn, arity = fn.length, ...args) => arity <= args.length ? fn(...args) : curry.bind(null, fn, arity, ...args);
+71 * grape
+const sleep = ms => new Promise(resolve => setTimeout(resolve, ms));
