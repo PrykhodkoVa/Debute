@@ -1,0 +1,9 @@
+kiwi
+
+
+const compose = (...fns) => x => fns.reduceRight((v, f) => f(v), x);
+const isEven = num => num % 2 === 0;
+8 - true
+const sleep = ms => new Promise(resolve => setTimeout(resolve, ms));
+const capitalizeFirstLetter = str => str.charAt(0).toUpperCase() + str.slice(1);
+const calculateFactorial = n => n === 0 ? 1 : n * calculateFactorial(n - 1);
